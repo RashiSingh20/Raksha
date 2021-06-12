@@ -1,0 +1,47 @@
+<!-- HEADER FILE -->
+<%- include("partials/header"); -%>
+
+<!-- TITLE -->
+<div class="container p-5">
+    <div class="text-center m-4">
+        <h1 class="display-3"><strong>Global Contribution</strong></h1>
+    </div>
+
+
+    <div class="shadow-lg rounded p-3">
+        <div class="row">
+
+            <!-- TRAVERSING THROUGH EVERY VICTIM -->
+                <%viclist.forEach(victim=> {%>
+                    <div class="col-md-5 m-4">
+                        <div class="card card-blog">
+                            <div class="card-image">
+                                <img class="img" src="uploads/images/<%=victim.img%>">
+                                    <!-- <div class="card-caption"> Quisque a bibendum magna </div> -->
+                                
+                                <div class="ripple-cont"></div>
+                            </div>
+                            <div class="table">
+                                <h4 class="text-weight-bold text-info text-center m-0">
+                                    <%= victim.location %>
+                                </h4>
+                                <br>
+                                <h5 class="mb-3 text-info text-center">
+                                    <%= victim.category %>
+                                </h5>
+                                <h5 class="mb-1 text-info">
+                                    <%= victim.saviersName %>
+                                </h5>
+                                <p class="card-description">
+                                    <%=victim.desc %>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <%})%>
+
+        </div> 
+    </div>
+</div>
+<%- include("partials/footer"); -%>
