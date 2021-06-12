@@ -7,7 +7,7 @@ Raksha is our web application where we help the needy and NGO's . We are bridgin
 #STEPS TO RUN WITH THE PROJECT
 
 Method 1
-Clone the repo
+Clone this repository
 To run the web application - Go to command line and change directory to the downloaded file location.
 Run "npm i"
 Run "nodemon app.js"
