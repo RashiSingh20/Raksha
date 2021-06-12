@@ -8,10 +8,15 @@ Raksha is our web application where we help the needy and NGO's . We are bridgin
 
 Method 1
 Clone this repository
+
 To run the web application - Go to command line and change directory to the downloaded file location.
+
 Run "npm i"
+
 Run "nodemon app.js"
+
 Open http://localhost:3000 to visit the website.
 
 Method 2
-Visit the website https://lit-plains-22827.herokuapp.com/helpWorld
+
+Visit the website https://lit-plains-22827.herokuapp.com
